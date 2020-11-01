@@ -1,5 +1,5 @@
 const name = document.getElementById('name');
-const other = document.querySelector('other');
+const title = document.getElementById('title');
 const otherT = document.getElementById('other-title');
 const colors = document.getElementById('color');
 
@@ -11,12 +11,12 @@ name.focus();
 otherT.hidden = 'true';
 /** Hiding the text field initally */
 
+const other = title.querySelector('other');
+/** Capturing the "other" option */
 
-other.addEventListener('click', () => {
-  if (otherT.hidden == true) {
-    otherT.style.display = 'block';
-  } else 
-    otherT.style.display = 'none';
+/*other.addEventListener('click', () => {
+  otherT.style.display = 'block';
+  
 });
 
 /** Giving the 'other' option the clickEventLitener */
