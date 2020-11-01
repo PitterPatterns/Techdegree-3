@@ -11,7 +11,7 @@ name.focus();
 otherT.hidden = 'true';
 /** Hiding the text field initally */
 
-const other = title.querySelector('other');
+const other = title.querySelector('option')[5];
 /** Capturing the "other" option */
 
 /*other.addEventListener('click', () => {
