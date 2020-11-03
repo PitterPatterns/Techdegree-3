@@ -2,7 +2,7 @@ const name = document.getElementById('name');
 const title = document.getElementById('title');
 const otherT = document.getElementById('other-title');
 const colors = document.getElementById('color');
-
+const other = title.querySelectorAll('option')[5];
 
 
 name.focus();
@@ -11,10 +11,10 @@ name.focus();
 otherT.hidden = 'true';
 /** Hiding the text field initally */
 
-const other = title.querySelector('option')[5];
+
 /** Capturing the "other" option */
 
-/*other.addEventListener('click', () => {
+title.addEventListener('change', () => {
   otherT.style.display = 'block';
   
 });
