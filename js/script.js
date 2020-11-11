@@ -14,9 +14,12 @@ otherT.hidden = 'true';
 
 /** Capturing the "other" option */
 
-title.addEventListener('change', () => {
-  otherT.style.display = 'block';
-  
+title.addEventListener('change', (e) => {
+  if (e.target.value == 'other') {
+    otherT.style.display = 'block';
+  } else {
+    otherT.style.display = 'none';
+  }
 });
 
 /** Giving the 'other' option the clickEventLitener */
