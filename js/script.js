@@ -30,8 +30,9 @@ oppie.value = 'Select Theme';
 oppie.appendChild(Tnode);
 
 console.log(oppie);
-/** Add option to specific Index */
+/** Add option tag to the specific Index */
 colors.add(oppie, 0);
+oppie.selected = true;
 
 
 console.log(colors);
